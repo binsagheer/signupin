@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+"width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripit.js" defer></script>
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="risponsive.css">
+
+    <title>SPA app</title>
+</head>
+
+<body>
+    <div class="my-container">
+    <div id="app">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"> <img src="—Pngtree—road rescue hand drawn vector_7230480 (1).png" alt=""> <span class="navbar-brand-name"> Road Service</span></a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link notification-icon" href="#">
+                                <i class="bi bi-bell"></i>
+                                <span class="notification-badge"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+      
+                  
+        <main>
+            <div id="content">
+                <div class="form_bootom">
+                
+                    <h1>HI ! <br> WELCOME </h1>
+                        <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Lorem ipur. </p>
+                   
+                    
+               
+                <div class="signin_form">
+                    <div class="form-container">
+                        <form>
+                            <input type="text" class="form-control form-control-custom" placeholder="User Name, E-mail or Phone Number" required>
+                            
+                            <input type="password" id="password"  class="form-control form-control-custom" placeholder="password "  required>
+                <i class="toggle-password fa fa-fw fa-eye-slash"></i>
+                            
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                                </div>
+                                <p class="mb-0"><a  class="forgot" href="#">Forgot Password</a></p>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-custom log_in w-100">Log In</button>
+                        </form>
+                    </div>
+    
+                    <p class="no-account">Don't have an account ? <a class="" href="#" onclick=
+                        "changeContent('Signup')">
+                            Sign up
+                        </a>
+        
+                </div>
+        
+            </div>
+
+        </main>
+    </div>
+</div>    
+          <!-- ENd of startig  -->
+    <script>
+        function changeContent(page) {
+    var contentDiv = document.getElementById('content');
+
+    switch (page) {
+        case 'Signup':
+            contentDiv.innerHTML = `
+         
+                   
+    <div class="signup_form my-container pt-5" >
+        
+        <h1 class="siginup_h1">First <br>Time here? 
+
+        </h1>
+    <p>Let's create an account. </p>
+
+        <div class=" form-container sign-up-form">
+
+            <form class="signup-form">
+                <input type="text" class="form-control form-control-custom" placeholder="User Name" required>
+                <input type="text" class="form-control form-control-custom" placeholder="Full Name" required>
+            
+                <input type="password" id="password"  class="form-control form-control-custom" placeholder="password "  required>
+                <i class="toggle-Password fa fa-fw fa-eye-slash"></i>
+              
+                 <input type="password" id="password"  class="form-control form-control-custom" placeholder="Confirm Password "  required>
+                <i class="toggle-password fa fa-fw fa-eye-slash"></i>
+                 
+                
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle-custom" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                       <span> Choose Your Position</span> <span><i class="fa-solid fa-arrow-down"></i></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item dropdown-item-custom" href="#">Position A</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#">Position B</a></li>
+                        <li><a class="dropdown-item dropdown-item-custom" href="#">Position C</a></li>
+                    </ul>
+                </div>
+    
+                <button type="submit" class="btn btn-custom">Sign Up</button>
+    
+                <div class="signup-footer">
+                    <p class="no-account">Do you already have an account? <span class="signup"> <a href=""><b>Sign In</b></a> </span></p>
+                </div>
+            </form>
+        </div>
+
+    </div>        
+`;
+            break;
+        default:
+            contentDiv.innerHTML = '<h2>Page not found!</h2>';
+            break;
+    
+    }
+        }
+
+    </script>
+  
+   
+       
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
